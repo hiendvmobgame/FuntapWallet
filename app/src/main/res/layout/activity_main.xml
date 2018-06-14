@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="16dp"
+    tools:context=".activity.CheckAuthActivity">
+
+    <ImageView android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo_funtap" />
+    <!--&lt;!&ndash; TODO: Update blank fragment layout &ndash;&gt;-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center_horizontal"
+        android:text="@string/nhap_ma_pin"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edt_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal"
+        android:inputType="number"
+        android:pointerIcon="alias" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:weightSum="4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:weightSum="3">
+
+            <com.funtap.wallet.ui.CircularButton
+                android:id="@+id/number_pad_1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="onNumberPadClick"
+                android:text="1"
+                android:textColor="#00796B"
+                android:textSize="18sp" />
+
+            <com.funtap.wallet.ui.CircularButton
+                android:id="@+id/number_pad_2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="onNumberPadClick"
+                android:text="2"
+                android:textColor="#00796B"
+                android:textSize="18sp" />
+
+            <com.funtap.wallet.ui.CircularButton
+                android:id="@+id/number_pad_3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="onNumberPadClick"
+                android:text="3"
+                android:textColor="#00796B"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:weightSum="3">
+
+            <com.funtap.wallet.ui.CircularButton
+                android:id="@+id/number_pad_4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="onNumberPadClick"
+                android:text="4"
+                android:textColor="#00796B"
+                android:textSize="18sp" />
+
+            <com.funtap.wallet.ui.CircularButton
+                android:id="@+id/number_pad_5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="onNumberPadClick"
+                android:text="5"
+                android:textColor="#00796B"
+                android:textSize="18sp" />
+
+            <com.funtap.wallet.ui.CircularButton
+                android:id="@+id/number_pad_6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="onNumberPadClick"
+                android:text="6"
+                android:textColor="#00796B"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:weightSum="3">
+
+            <com.funtap.wallet.ui.CircularButton
+                android:id="@+id/number_pad_7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="onNumberPadClick"
+                android:text="7"
+                android:textColor="#00796B"
+                android:textSize="18sp" />
+
+            <com.funtap.wallet.ui.CircularButton
+                android:id="@+id/number_pad_8"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="onNumberPadClick"
+                android:text="8"
+                android:textColor="#00796B"
+                android:textSize="18sp" />
+
+            <com.funtap.wallet.ui.CircularButton
+                android:id="@+id/number_pad_9"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="onNumberPadClick"
+                android:text="9"
+                android:textColor="#00796B"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:weightSum="3">
+
+            <com.funtap.wallet.ui.CircularButton
+                android:id="@+id/number_pad_0"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="onNumberPadClick"
+                android:text="0"
+                android:textColor="#00796B"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_login_with_fingerprint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/ic_fingerprint_red_400_36dp"
+        android:onClick="onClick"
+        android:paddingLeft="10dp"
+        android:text="@string/ng_nh_p_b_ng_v_n_tay"
+        android:textColor="@color/colorPrimaryDark"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/forgotpass"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:onClick="onClick"
+            android:text="quên mật khẩu" />
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:onClick="onClick"
+            android:text="thoát tài khoản" />
+    </LinearLayout>
+</LinearLayout>
