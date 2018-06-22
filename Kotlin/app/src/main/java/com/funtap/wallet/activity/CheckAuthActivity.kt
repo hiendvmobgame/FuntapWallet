@@ -14,6 +14,7 @@ import android.hardware.fingerprint.FingerprintManager
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
+import android.support.annotation.Nullable
 import android.support.annotation.RequiresApi
 import android.support.v4.app.ActivityCompat
 import android.support.v4.content.LocalBroadcastManager
@@ -34,15 +35,14 @@ class CheckAuthActivity : AppCompatActivity(), FingerPrintVerifyFragment.OnFragm
     internal lateinit var btn_login_with_fingerprint: Button
 
     private val receiver = object : BroadcastReceiver() {
-        override fun onReceive(context: Context, inent: Intent) {
-            if (intent.action == Constant.VERIFIED) {
+        override fun onReceive(context: Context, intent: Intent) {
+            if (intent.action.equals(Constant.VERIFIED)) {
                 val intent1 = Intent(this@CheckAuthActivity, HomeActivity::class.java)
                 startActivity(intent1)
                 finish()
             }
         }
     }
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
